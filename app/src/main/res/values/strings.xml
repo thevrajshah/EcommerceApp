@@ -12,4 +12,6 @@
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="login">Login</string>
+    <string name="mobile">Mobile</string>
+    <string name="username">username</string>
 </resources>

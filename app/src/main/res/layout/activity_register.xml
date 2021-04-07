@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/emailRegister"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:text="@string/email"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobileRegister" />
+
+    <EditText
+        android:id="@+id/mobileRegister"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:text="@string/mobile"
+        app:layout_constraintTop_toBottomOf="@id/emailRegister"
+        app:layout_constraintBottom_toTopOf="@id/userRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+        android:id="@+id/userRegister"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:text="@string/username"
+        app:layout_constraintTop_toBottomOf="@id/mobileRegister"
+        app:layout_constraintBottom_toTopOf="@id/passwordRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:text="@string/password"
+        app:layout_constraintTop_toBottomOf="@id/userRegister"
+        app:layout_constraintBottom_toTopOf="@id/Register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        app:layout_constraintTop_toBottomOf="@id/passwordRegister"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+    </Button>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
