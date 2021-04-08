@@ -8,55 +8,83 @@
 
     <EditText
         android:id="@+id/emailRegister"
-        android:layout_width="128dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/email"
-        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="10dp"
+        android:background="#E8E8E8"
+        android:hint="@string/email"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/mobileRegister"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mobileRegister" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegister" />
 
     <EditText
         android:id="@+id/mobileRegister"
-        android:layout_width="128dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/mobile"
-        app:layout_constraintTop_toBottomOf="@id/emailRegister"
-        app:layout_constraintBottom_toTopOf="@id/userRegister"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="10dp"
+        android:background="#E8E8E8"
+        android:hint="@string/mobile"
+        android:padding="10dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/userRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/emailRegister" />
+
+
     <EditText
         android:id="@+id/userRegister"
-        android:layout_width="128dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/username"
-        app:layout_constraintTop_toBottomOf="@id/mobileRegister"
-        app:layout_constraintBottom_toTopOf="@id/passwordRegister"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="10dp"
+        android:background="#E8E8E8"
+        android:hint="@string/username"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/mobileRegister" />
+
+
     <EditText
         android:id="@+id/passwordRegister"
-        android:layout_width="128dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/password"
-        app:layout_constraintTop_toBottomOf="@id/userRegister"
-        app:layout_constraintBottom_toTopOf="@id/Register"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="20dp"
+        android:background="#E8E8E8"
+        android:hint="@string/password"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Register"
-        android:layout_width="75dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="#2196F3"
+        android:padding="10dp"
         android:text="Register"
-        app:layout_constraintTop_toBottomOf="@id/passwordRegister"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        >
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_TopOf="parent"
+
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="570dp">
+
 
     </Button>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

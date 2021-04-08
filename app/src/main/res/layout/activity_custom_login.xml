@@ -6,33 +6,68 @@
     android:layout_height="match_parent"
     tools:context=".CustomLoginActivity">
 
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/login"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@id/usernameCustom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604" />
+
     <EditText
         android:id="@+id/usernameCustom"
-        android:layout_width="128dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/email"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="48dp"
+        android:hint="@string/email"
         app:layout_constraintBottom_toTopOf="@id/passwordCustom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866"
+        android:background="#E8E8E8"
+        android:padding="10dp"
+
+       />
+
     <EditText
         android:id="@+id/passwordCustom"
-        android:layout_width="128dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/password"
-        app:layout_constraintTop_toBottomOf="@id/usernameCustom"
-        app:layout_constraintBottom_toTopOf="@id/button"
+        android:layout_marginHorizontal="48dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#E8E8E8"
+        android:padding="10dp"
+
+         />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="93dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:onClick="login"
+        android:padding="10dp"
         android:text="@string/login"
-        app:layout_constraintTop_toBottomOf="@id/passwordCustom"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="xyz"/>
+        app:layout_constraintTop_toBottomOf="@id/passwordCustom"
+        app:layout_constraintVertical_bias="0.109" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
