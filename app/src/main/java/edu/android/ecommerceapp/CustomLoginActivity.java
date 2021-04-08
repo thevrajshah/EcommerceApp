@@ -40,4 +40,10 @@ public class CustomLoginActivity extends AppCompatActivity {
             email.setError("Alya badhu sarkhu nakh!!");
         }
     }
+
+    public void register(View view) {
+        Intent i = new Intent(CustomLoginActivity.this, RegisterActivity.class);
+        startActivity(i);
+        finish();
+    }
 }

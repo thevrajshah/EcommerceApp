@@ -13,6 +13,7 @@
     <string name="email">Email</string>
     <string name="login">Login</string>
     <string name="mobile">Mobile</string>
-    <string name="username">username</string>
-    
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+
 </resources>
