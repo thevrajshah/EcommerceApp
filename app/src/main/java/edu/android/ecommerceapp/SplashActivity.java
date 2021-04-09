@@ -1,9 +1,10 @@
 package edu.android.ecommerceapp;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -15,11 +16,13 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashActivity.this, CustomLoginActivity.class);
+                Intent i = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(i);
-               // finish();
+                finish();
+                //NavController navController = Navigation.findNavController(SplashActivity.this,R.id.nav_main_graph);
+                //navController.navigate(R.id.action_splashActivity_to_customLoginActivity);
             }
-        },3000);
+        }, 3000);
     }
 
 }

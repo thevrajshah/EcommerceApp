@@ -102,4 +102,14 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mobileRegister" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/abc_vector_test"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="back"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
