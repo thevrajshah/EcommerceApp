@@ -17,27 +17,33 @@ public class CustomLoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        super.getSupportActionBar().hide();
         setContentView(R.layout.activity_custom_login);
 
         email = findViewById(R.id.usernameCustom);
         password = findViewById(R.id.passwordCustom);
     }
 
-
-
     public void login(View view) {
-        if (email.getText().toString().equals("cmsapp@svit.in") && email.getText().toString().matches(".*@.*.[com|in]")){
-            if(password.getText().toString().equals("1234")){
+
+        if(email.getText().toString().matches(".*@.*..*") && email.getText().toString().equals("svitcms@svit.ac.in")){
+            if (password.getText().toString().equals("svitcms")) {
                 Intent i = new Intent(CustomLoginActivity.this, MainActivity.class);
                 startActivity(i);
                 finish();
             }
-            else{
-                password.setError("Please enter valid password");
+            else {
+                password.setError("Alya badhu sarkhu nakh!!");
             }
         }
-        else{
-            email.setError("Please enter valid email");
+        else {
+            email.setError("Alya badhu sarkhu nakh!!");
         }
+    }
+
+    public void register(View view) {
+        Intent i = new Intent(CustomLoginActivity.this, RegisterActivity.class);
+        startActivity(i);
+        finish();
     }
 }

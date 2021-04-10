@@ -6,57 +6,110 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
-    <EditText
-        android:id="@+id/emailRegister"
-        android:layout_width="128dp"
-        android:layout_height="50dp"
-        android:text="@string/email"
-        app:layout_constraintBottom_toTopOf="parent"
+    <TextView
+        android:id="@+id/RegisterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:fontFamily="monospace"
+        android:text="@string/register"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/userRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mobileRegister" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#2196F3"
+        />
+
+    <EditText
+        android:id="@+id/emailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="10dp"
+        android:background="#E8E8E8"
+        android:hint="@string/email"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/mobileRegister"
+        app:layout_constraintEnd_toEndOf="@+id/userRegister"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/userRegister"
+        app:layout_constraintTop_toBottomOf="@+id/userRegister"
+
+        app:layout_constraintVertical_bias="0.866" />
+
+    <EditText
+        android:id="@+id/userRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="10dp"
+        android:background="#E8E8E8"
+        android:hint="@string/username"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterText" />
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="108dp"
+        android:background="#E8E8E8"
+        android:hint="@string/password"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/registerRegister"
+        app:layout_constraintBottom_toBottomOf="@id/registerRegister"
+        app:layout_constraintEnd_toEndOf="@+id/mobileRegister"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/mobileRegister"
+        app:layout_constraintTop_toBottomOf="@+id/mobileRegister" />
 
     <EditText
         android:id="@+id/mobileRegister"
-        android:layout_width="128dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/mobile"
-        app:layout_constraintTop_toBottomOf="@id/emailRegister"
-        app:layout_constraintBottom_toTopOf="@id/userRegister"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-    <EditText
-        android:id="@+id/userRegister"
-        android:layout_width="128dp"
-        android:layout_height="50dp"
-        android:text="@string/username"
-        app:layout_constraintTop_toBottomOf="@id/mobileRegister"
-        app:layout_constraintBottom_toTopOf="@id/passwordRegister"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-    <EditText
-        android:id="@+id/passwordRegister"
-        android:layout_width="128dp"
-        android:layout_height="50dp"
-        android:text="@string/password"
-        app:layout_constraintTop_toBottomOf="@id/userRegister"
-        app:layout_constraintBottom_toTopOf="@id/Register"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="10dp"
+        android:background="#E8E8E8"
+        android:hint="@string/mobile"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordRegister"
+        app:layout_constraintEnd_toEndOf="@+id/emailRegister"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/emailRegister"
+        app:layout_constraintTop_toBottomOf="@+id/emailRegister"
+        app:layout_constraintVertical_bias="0.866" />
 
     <Button
-        android:id="@+id/Register"
-        android:layout_width="75dp"
+        android:id="@+id/registerRegister"
+        android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="Register"
-        app:layout_constraintTop_toBottomOf="@id/passwordRegister"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        android:padding="10dp"
+        android:text="@string/register"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        >
+        app:layout_constraintTop_toBottomOf="@id/mobileRegister" />
 
-    </Button>
-
-
-
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/abc_vector_test"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="back"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
