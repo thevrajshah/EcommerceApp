@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/profile"
-        android:name="edu.android.ecommerceapp.bottomNav.ProfileFragment"
+        android:name="edu.android.ecommerceapp.bottomNav.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
