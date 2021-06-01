@@ -27,8 +27,8 @@ public class CustomLoginActivity extends AppCompatActivity {
 
     public void login(View view) {
 
-        if(email.getText().toString().matches(".*@.*..*") && email.getText().toString().equals("svitcms@svit.ac.in")){
-            if (password.getText().toString().equals("svitcms")) {
+        if(email.getText().toString().matches(".*@.*..*") && email.getText().toString().equals("imjp19@odeo.in")){
+            if (password.getText().toString().equals("123")) {
                 Intent i = new Intent(CustomLoginActivity.this, MainActivity.class);
                 startActivity(i);
                 finish();

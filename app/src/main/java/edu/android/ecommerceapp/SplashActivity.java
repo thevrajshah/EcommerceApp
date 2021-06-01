@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -16,7 +18,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashActivity.this, MainActivity.class);
+                Intent i = new Intent(SplashActivity.this, CustomLoginActivity.class);
                 startActivity(i);
                 finish();
                 //NavController navController = Navigation.findNavController(SplashActivity.this,R.id.nav_main_graph);
